@@ -613,19 +613,36 @@ PRICING
     padding: 60px 0px;
     width: 100%;
     max-width: 1800px;
+   
 }
+
 
 .basic__top,
 .basic__middle,
-.basic__bottom 
- {
-    border: 2px solid rgb(244, 243, 243);
+.basic__bottom  {
+    border: 1.5px solid rgb(244, 243, 243);
     padding: 36px 80px;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
+}
+
+.basic__plan {
+    position:relative
+}
+
+.basic__stripe {
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    height: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
 }
 
 .basic__top {
@@ -677,8 +694,8 @@ PRICING
 }
 
 .basic__btn {
-    background-color: rgb(90, 184, 184);
-    color: white;
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
     font-weight: 700;
     padding: 20px 80px;
     border: none;
@@ -687,13 +704,16 @@ PRICING
 
 .basic__btn:hover {
     transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    transition: all 300ms ease-in-out; 
+    cursor: pointer;
 }
 
 .business__top,
 .business__middle,
 .business__bottom 
  {
-    border: 2px solid rgba(147, 147, 240, 0.717);
+    border: 1.5px solid rgba(147, 147, 240, 0.717);
     padding: 36px 80px;
     display:flex;
     flex-direction: column;
@@ -765,13 +785,16 @@ PRICING
 
 .business__btn:hover {
     transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    transition: all 300ms ease-in-out; 
+    cursor: pointer;
 }
 
 .enterprise__top,
 .enterprise__middle,
 .enterprise__bottom 
  {
-    border: 2px solid rgb(244, 243, 243);
+    border: 1.5px solid rgb(244, 243, 243);
     padding: 36px 80px;
     display:flex;
     flex-direction: column;
@@ -780,7 +803,23 @@ PRICING
     align-items: center;
  }
 
- .enterprise__top {
+.enterprise__plan {
+    position: relative;
+} 
+
+.enterprise__stripe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(245,101,101) 0%, rgb(254,178,178) 100%);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.enterprise__top {
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
 }
@@ -830,8 +869,8 @@ PRICING
 }
 
 .enterprise__btn {
-    background-color: rgb(220, 121, 125);
-    color: white;
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(245,101,101) 0%, rgb(254,178,178) 100%);
     font-weight: 700;
     padding: 20px 80px;
     border: none;
@@ -840,6 +879,9 @@ PRICING
 
 .enterprise__btn:hover {
     transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    transition: all 300ms ease-in-out; 
+    cursor: pointer;
 }
 
 /*
