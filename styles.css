@@ -127,11 +127,11 @@ nav {
 
 .menu__backdrop {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.934);
+    background-color: white;
     top: 0;
-    right: 0;
     left: 0;
     bottom: 0;
+    right: 0;
     z-index: 100;
     display: flex;
     justify-content: center;
@@ -148,8 +148,9 @@ nav {
 }
 
 .menu--open {
-    max-height: 100vh;
+    max-height: 40vh;
     overflow-y: hidden;
+    border: 2px solid grey;
 }
 
 .menu__links { 
@@ -159,12 +160,17 @@ nav {
 }
 
 .menu__list { 
-    padding: 32px 0;
+    padding: 16px 0;
 }
 
 .menu__link {
+    color: black;
+    font-size: 20px;
+    font-weight: bold
+}
+
+.nav__link--primary {
     color: white;
-    font-size: 40px;
 }
 
 .btn__menu--close {
@@ -199,17 +205,20 @@ header {
 .header__row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     height: 100%;
     width: 100%;
     max-width: 1800px;
 }
 
+.header__description--title {
+    font-size: 38px;
+}
+
 .header__description {
     width: 40%;
     max-width: 900px;
-    height: 80%; 
-    font-size: 24px;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -217,10 +226,11 @@ header {
 
 .header__description--para {
     line-height: 1.5;
-    padding-bottom: 16px;
+    padding-bottom: 24px;
     padding-top: 12px;
     font-size: 16px;
     letter-spacing: .4px;
+    width: 500px;
     
 }
 
@@ -234,7 +244,7 @@ header {
     justify-content: space-between;
     padding: 5px 5px 5px 32px;
     height: 68px;
-    width: 420px;
+    width: 450px;
 }
 
 .header__email:hover {
@@ -276,26 +286,26 @@ header {
 .header__customers {
     width: 100%;
     height: 38px;
-    max-width: 450px;
     filter: grayscale(1) invert(1);
     opacity: 60%;
     z-index: 1;
+    padding-right: 36px;
 }
 
 .header__img--wrapper { 
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     width: 60%;
-    max-width: 1800px;
+    max-width: 1100px;
     height: 100%;
    
 }
 
 .header__img {
-    width: 900px;
+    max-width: 512px;
     height: 400px; 
-    padding: 0px 0px 48px 0px;
+    padding: 0px 0px 40px 0px;
     margin-top: 30px;
     margin-left: 120px;
 }   
@@ -346,21 +356,22 @@ FEATURES
 }
 
 .feature__title {
-    font-size: 48px;
+    font-size: 54px;
     font-weight: 900;
-    width: 700px;
     margin-bottom: 32px;
     text-align: center;
+    letter-spacing: 2px;
 }
 
 .feature__para {
     width: 50%;
-    line-height: 1.5;
+    line-height: 2;
     color: rgba(88, 99, 148, 0.833);
     font-weight: 600;
     font-size: 18px;
     margin-bottom: 58px;
     text-align: center;
+    letter-spacing: .5px;
 }
 
 .features {
@@ -398,7 +409,7 @@ FEATURES
 }
 
 .feature__description { 
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 500;
     color: rgba(88, 99, 148, 0.833);
 }
@@ -474,7 +485,7 @@ QUALITY
     margin: 48px;
     margin-left: 100px;
     height: 380px;
-    border: 1px solid rgba(184, 186, 194, 0.388);
+    border: 2px solid rgba(184, 186, 194, 0.388);
 }
 
 .quality__img {
@@ -624,33 +635,34 @@ VALUES
 
 .value__para {
     color:rgb(139, 144, 164);
-    width: 80%;
-    line-height: 1.5;
+    width: 90%;
+    line-height: 1.8;
     font-size: 18px;
 }
 
 .value__paras {
     color:rgb(139, 144, 164);
-    width: 100%;
+    width: 90%;
     line-height: 1.5;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .value {
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 400px;
 }
 
 .value__boxes {
    display: flex;
    padding: 24px 0px;
+  
 }
 
 
 .values__list {
    display: flex;
-   padding: 28px 4px; 
+   padding: 28px 8px; 
 }
 
 .values__img {
@@ -718,7 +730,7 @@ PRICING
 }
 
 .price__title {
-    font-size: 45px;
+    font-size: 54px;
     font-weight: 900;
     width: 65%;
     margin-bottom: 32px;
@@ -1049,7 +1061,7 @@ TESTIMONIALS
 }
 
 .test__img {
-    width: 500px;
+    width: 100%;
     max-width: 500px;
     height: 600px;
 }
@@ -1059,7 +1071,7 @@ TESTIMONIALS
     max-width: 900px;
     display: flex;
     flex-direction: column;
-    line-height: 1.5;
+    line-height: 1.8;
 }
 
 .test__label {
@@ -1072,7 +1084,7 @@ TESTIMONIALS
 }
 
 .test__title  {
-    font-size: 48px;
+    font-size: 54px;
     font-weight: 900;
     width: 100%;
     margin-bottom: 12px;
@@ -1233,7 +1245,7 @@ GET STARTED
 
 .start__button {
     margin-right: 12px;
-    justify-content: space-between;
+    width: auto;
 }
 
 .start {
@@ -1338,7 +1350,6 @@ a:hover {
 
 .footer__rows {
     color: white;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
@@ -1390,13 +1401,49 @@ a:hover {
 }
 
 hr {
- opacity: 50%;
+ opacity: 30%;
 }
 
-/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+/* LARGE LAPTOPS & MONITORS */
+
+@media (max-width: 1280px) {
+    .header__description--title {
+        font-size: 36px;
+    }
+
+    .header__description--para {
+        font-size: 16px;
+    }
+
+    .header__img--wrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header__img {
+        max-width: 512px;
+    }
+
+    .header__row {
+        align-items: flex-end;
+    }
+
+    .header__customers {
+        padding-right: 36px;
+    }
+
+    .basic__bottom,
+    .business__bottom,
+    .enterprise__bottom {
+        padding: 36px 80px;
+    }
+}
 
 
-@media (max-width: 768px) {
+/*  TABLETS, LAPTOPS */
+
+
+@media (max-width: 1024px) {
     .btn__menu {
         display: block;
         padding: 24px;
@@ -1407,27 +1454,38 @@ hr {
     }
 
     .header__row {
-        display: block;
-        margin-top: 62px;
-    }
-
-    .header__description {
-        width: 100%;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
     }
 
-    .header__description--para {
-        width: 70%;
-        font-size: 14px;
+    .header__description,
+    .header__img--wrapper {
+        width: 100%;
+        max-width: 512px;
     }
 
-    h1 { 
+    .header__description {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+    .header__description--title { 
         font-size: 30px;
     }
 
+    .header__description--para {
+        margin: 20px 0;
+    }
+
+    .header__customers {
+        padding-right: 0;
+    }
+
+    .header__customers--title,
     .header__img--wrapper {
-        width: 100%;
+        margin-top: 48px;
     }
 
     .feature__para {
@@ -1435,52 +1493,444 @@ hr {
     }
 
     .features {
-        display: block;
+        max-width: 768px;
     }
 
     .feature {
-        width: 75%;
+        width: calc(50%);
     }
 
-    .feature:last-child {
-        margin-bottom: 502px;
+    .feature__row {
+        padding: 32px 8px;
+        margin: 0 16px;
     }
 
-    .quality__row {
+    .feature__para {
+        max-width: none;
+    }
+
+    .header__description--para,
+    .feature__para,
+    .quality__para,
+    .value__para {
+        font-size: 16px;
+    }
+
+    .header__description--title,
+    .quality__title,
+    .steps__title, 
+    .values__title {
+        font-size: 36px;
+    }
+
+    .quality__description {
+        margin-right: 0px;
+        padding-right: 28px;
+        width: 40%;
+    }
+
+    .quality__img--wrapper {
+        width: 60%;
+        margin-right: 0px;
+    }
+    
+    .steps__row {
+        width: 100%;
+        max-width: 1024px;
+    }
+
+
+    .steps__img {
+            max-width: 450px;
+            padding-top: 70px;
+            position: relative;
+            z-index: 2;
+    }
+
+    .step__description {
+        max-width: 50%;
+    }
+
+    .values__list { 
         display: block;
+    }
+
+    .value {
+        width: 320px;
+        padding: 0;
+    }
+    
+    .plans {
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        padding-left: 280px;
+    }
+
+    .price__title {
+        width: 100%;
+    }
+
+    .pricing__para {
+        width: 60%;
+    }
+
+    .basic__plan,
+    .business__plan,
+    .enterprise__plan { 
+        width: 100%;
+        max-width: 390px;
+        margin-bottom: 64px;
+    }
+
+    .price__title, 
+    .feature__title { 
+        font-size: 48px;
+    }
+
+    .basic__target,
+    .business__target,
+    .enterprise__target {
+        font-weight: 900;
+        width: 300px;
+        letter-spacing: 1.5px;
+        }
+
+    .plan__feature,
+    .business__plan--feature {
+        font-size: 16px;
+        width: 300px;
+    }
+
+    .basic__bottom,
+    .business__bottom,
+    .enterprise__bottom {
+        padding: 32px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .basic__btn,
+    .business__btn,
+    .enterprise__btn {
+        margin: 0 auto;
+    }
+
+    .test__img--wrapper {
+        max-width: 420px;
+    }
+
+    .test__title {
+        font-size: 37px;
+    }
+
+    .test__description {
+        font-size: 14px;
+    }
+    
+    .start__box {
+        padding: 100px 200px;
+        max-width: 100%;
+        height: 360px;
+        display: block;
+    }
+
+    .start__buttons {
+        display: flex;
+        justify-content: center;
+        padding-top: 32px;
+        margin: 0;
+    }
+
+    
+    .start__title {
+        text-align: center;
+        width: 100%;
+        max-width: 900px;
+    }
+
+    .start__button {
+        justify-content: center;
+        align-items: center;
+        max-width: calc(100% / 2);
+    }
+
+    .start,
+    .contact {
+        padding: 20px 34px;
+    }
+
+    .footer__rows {
+        font-size: 14px;
+    }
+
+}
+
+/* SMALL PHONES, TABLETS, LARGE SMART PHONES */
+
+@media (max-width: 768px) {
+    .header__description--title {
+        font-size: 34px;
+        padding-top: 54px; 
+        margin: 0 auto;
+    }
+
+    .header__description--para {
+        margin: 0 auto;
+    }
+
+    .header__email {
+        margin: 0 auto;
+    }
+
+    .feature__para {
+        letter-spacing: normal;
+        width: 90%;
+    }
+
+    .features {
+        margin-bottom: 450px;
+    }
+
+    .feature {
+        width: 100%;
+        max-width: 380px;
+        padding: 24px;
+    }
+
+    .quality__row,
+    .values__row {
+        flex-direction:column-reverse
+    }
+
+    .quality__container {
+        padding: 0px 130px;
+    }
+
+    .quality__img--wrapper,
+    .quality__description {
+        width: 100%;
+        max-width: 450px;
+        max-height: fit-content;
+    }
+
+    .quality__img {
+        width: 100%;
+        height: auto;
+    }
+
+    .quality__description,
+    .quality__title,
+    .quality__para {
+        margin-top: 16px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 758px;
+    }
+
+    .quality__title {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .quality__para {
+        font-size: 15px;
     }
 
     .steps__row {
         display: block;
+        align-items: center;
+        justify-content: center;
     }
 
-    .steps__list,
-    .steps__title,
     .step__container {
-        justify-content: center;
-        align-items: center;
+        margin-left: 50px;
+        margin-top: 68px;
     }
 
-    .steps__title {
-        font-size: 46px;
-        margin: 0 auto;
-        }
-
-    .step__number {
-        width: 240px;
-        justify-content: center;
-        align-items: center;
+    .steps__img--wrapper {
+            padding-left: 100px;
     }
 
     .step {
-        width: 400px;
-        height: 150px;
         display: block;
+        margin-bottom: 66px;
     }
 
-    .step__description {
-        justify-content: center;
+    .step__description,
+    .step__container,
+    .step__number, 
+    .step__para {
+        text-align: center;
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .steps__title {
+        text-align: left;
+        padding-left: 24px;
+    }
+
+    .values__container {
+        padding: 16px 150px;
+    }
+
+    .values__container,
+    .values__img--wrapper {
+        width: 100%;
+    }
+
+    .values__title--box {
+        text-align: center;
+        width: 100%;
+        margin-top: 48px;
+    }
+
+    .values__title {
+        width: 90%;
+    }
+
+    .value__para {
+        font-size: 14px;
+    }
+
+    .values__list {
+        padding-left: 78px;
+    }
+
+    .value__boxes { 
         align-items: center;
+        justify-content: center;
     }
 
+    .pricing__header {
+        align-items: center;
+        justify-content: center;
+        }
+
+        .price__title {
+            width: 90%;
+        }
+
+        .pricing__para {
+            width: 80%;
+            font-size: 15px;
+        }
+
+        .plans {
+            padding-left: 150px;
+        }
+
+        .pricing__container {
+            margin-bottom: 0px;
+        }
+
+        .testimonial__row {
+            display: block;
+        }
+
+        .test__description,
+        .test__img--wrapper,
+        .test__img {
+            width: 80%;
+            max-width: fit-content;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+
+        .test__img {
+            max-height: fit-content;
+            margin-left: 120px;
+            margin-top: 0px;
+        }
+
+        .test__img--wrapper {
+            height: 400px;
+        }
+
+        .test__title,
+        .test__para, 
+        .review__para, 
+        .review__title {
+            text-align: center;
+        }
+
+        .test__para,
+        .review__para {
+            width: 70%;
+            font-size: 15px;
+        }
+
+        .test__reviewer {
+            width: 70%;
+        }
+
+        .start__box {
+            padding: 84px;            
+        }
+
+        .footer__columns {
+            height: 450px;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin-bottom: 50px; 
+        }
+
+        .footer__column {
+            margin-top: 42px;
+            width: 220px;
+        }
+
+        .footer__row {
+            height: 800px;
+            width: 100vw;
+        }
+
+        .footer__rows {
+            padding-right: 100px;
+            height: 50px;
+        }
+
+        .footer__container {
+            display: block; 
+            padding: 50px  200px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer__logo,
+        .footer__copyright {
+            padding-bottom: 28px;
+            text-align:start;
+            width: 300px;
+        }
+
+        .footer__logo {
+            padding-left: 64px;
+        }
+
+        .footer__logo--title {
+            font-size: 24px;
+        }
+        .social__links {
+            justify-content: center;
+        }
+
+        .social__link {
+            padding: 8px;
+        }
+
+    }
+
+    /* SMALL PHONES AND LARGE SMART PHONES */
+
+@media (max-width: 550px) {
+
+    
 }
+
