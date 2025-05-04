@@ -1887,6 +1887,11 @@ hr {
         padding: 0;
     }
 
+    .header__email--btn {
+        width: auto;
+        height: 58px;
+    }
+
     .header__email--input {
         border: 2px solid rgba(227, 223, 223, 0.767);
         border-radius: 68px;
