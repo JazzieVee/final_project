@@ -1186,8 +1186,9 @@ TESTIMONIALS
 }
 
 .arrow__line {
-    opacity: 30%;
-    margin: 24px 0;
+    opacity: 40%;
+    height: 36px;
+    margin: 16px 0;
 }
 
 /*
@@ -1837,6 +1838,7 @@ hr {
         .arrow__line { 
             opacity: 40%;
             height: 24px;
+            margin: 24px 0;
         }
 
         .footer__columns {
