@@ -1291,6 +1291,7 @@ GET STARTED
 
 .start:hover {
     background-color: rgba(249, 81, 51, 0.893);
+    cursor: pointer;
 }
 
 .contact {
@@ -1307,6 +1308,7 @@ GET STARTED
 .contact:hover {
     color:#5e0df6;
     background-color: white;
+    cursor: pointer;
 }
 
 /*
